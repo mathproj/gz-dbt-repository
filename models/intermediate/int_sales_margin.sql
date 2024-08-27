@@ -1,6 +1,7 @@
 WITH sales_data AS (
     SELECT 
         s.orders_id,
+        s.date_date,
         s.quantity,
         s.revenue,
         p.products_id,
