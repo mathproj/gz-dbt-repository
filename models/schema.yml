@@ -58,8 +58,12 @@ sources:
           
           - name: ship_cost
             description: Recorded cost of shipping as a string.
-      - name: raw_gz_adwords
-      - name: raw_gz_bing
-      - name: raw_gz_criteo
-      - name: raw_gz_facebook
+      - name: adwords
+        identifier: raw_gz_adwords
+      - name: bing
+        identifier: raw_gz_bing 
+      - name: criteo
+        identifier: raw_gz_criteo 
+      - name: facebook
+        identifier: raw_gz_facebook 
 
