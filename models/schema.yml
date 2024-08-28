@@ -64,7 +64,6 @@ sources:
         tests:
           - unique:
               column_name: "(campaign_key || '_' || date_date)"
-          - not_null:
       - name: bing
         identifier: raw_gz_bing 
         description: campaign bing
@@ -83,13 +82,13 @@ sources:
         tests:
           - unique:
               column_name: "(campaign_key || '_' || date_date)"
-      # - name: int_campaings
-      #   description: data campaigns
-      #   tests:
-      #     - unique:
-      #         column_name: "(campaign_key || '_' || date_date)"
-      #     - not_null:
-      #         column_name: 
-      #           - paid_source
-      #           - campaign_name
+      - name: int_campaings
+        description: data campaigns
+        tests:
+          - unique:
+              column_name: "(campaign_key || '_' || date_date)"
+          - not_null:
+              column_name: 
+                - paid_source
+                - campaign_name
 
