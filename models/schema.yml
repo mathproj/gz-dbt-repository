@@ -60,10 +60,36 @@ sources:
             description: Recorded cost of shipping as a string.
       - name: adwords
         identifier: raw_gz_adwords
+        description: campaign adwords
+        tests:
+          - unique:
+              column_name: "(campaign_key || '_' || date_date)"
+          - not_null:
       - name: bing
         identifier: raw_gz_bing 
+        description: campaign bing
+        tests:
+          - unique:
+              column_name: "(campaign_key || '_' || date_date)"
       - name: criteo
         identifier: raw_gz_criteo 
+        description: campaign criteo
+        tests:
+          - unique:
+              column_name: "(campaign_key || '_' || date_date)"
       - name: facebook
         identifier: raw_gz_facebook 
+        description: campaign facebook
+        tests:
+          - unique:
+              column_name: "(campaign_key || '_' || date_date)"
+      # - name: int_campaings
+      #   description: data campaigns
+      #   tests:
+      #     - unique:
+      #         column_name: "(campaign_key || '_' || date_date)"
+      #     - not_null:
+      #         column_name: 
+      #           - paid_source
+      #           - campaign_name
 
