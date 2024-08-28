@@ -41,4 +41,4 @@ models:
     mart:
       +materialized: table
       finance:
-        +schema: finance
+        +schema: dbt_miller_finance
