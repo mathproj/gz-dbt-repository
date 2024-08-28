@@ -82,7 +82,7 @@ sources:
         tests:
           - unique:
               column_name: "(campaign_key || '_' || date_date)"
-      - name: int_campaings
+      - name: int_campaigns
         description: data campaigns
         tests:
           - unique:
