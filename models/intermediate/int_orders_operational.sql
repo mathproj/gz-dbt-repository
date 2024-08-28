@@ -32,7 +32,9 @@ SELECT
     margin,
     shipping_fee,
     logcost,
-    ship_cost
+    ship_cost,
+    purchase_cost,
+    quantity
 FROM
     operational_data
 
